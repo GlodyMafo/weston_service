@@ -1,0 +1,155 @@
+.service-page-service h3{
+    background: linear-gradient(90deg, #1e90ff, #00bfff, #00ff7f);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    width: 100%;
+    margin-top: 90px; 
+    text-align: start;
+    margin-left: 10%;
+}
+.service-page-service img{
+    width: 80%;
+    height: 40vh;
+    margin-top: 10px;
+}
+.service-page-service-img{
+    
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: 20px;
+    margin-left: 10%;
+}
+.myfig{
+    background: #fff;
+    width: 80%;
+    margin-top: -2%;
+    height: 30vh;
+}
+.figure-div{
+    display: flex;
+    text-align: center;
+    align-items: center;
+}
+.figure-div img{
+height: 50px;
+width: 50px;
+margin-left: 20%;
+}
+.figure-div p{
+    font-weight: 600;
+}
+.figcaption{
+    font-size: 20px;
+    text-align: center;
+    color: #00bfff;
+}
+.service-page-service-btn{
+    color: var(--text-color);
+    font-weight: 700 !important;
+    border-radius: 50px !important;
+    height: 45px;
+    width: 190px;
+    cursor: pointer;
+    display: inline-block;
+    padding: 0.75rem 1.2rem;
+    text-align: center;
+    font-size: 20px;
+    padding: 0.75rem 1.2rem;
+    border: 1px solid var(--main-color);
+    transition: var(--transition);
+    background-color: var(--main-color);
+    cursor: pointer;
+    font-size: 20px;
+    margin-top: 10%;
+
+}
+.service-page-service-btn:hover{
+    border: none;
+    outline: none;
+    color: #1e90ff;
+    background: transparent;
+}
+@media screen and (max-width: 1024px) {
+    .service-page-service img{
+        width: 100%;
+        height: 20vh;
+        margin-top: 10px;
+    }
+    .service-page-service-img{
+    
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 5px;
+        margin-top: 20px;
+        margin-left: 5%;
+    }
+    .myfig{
+        background: #fff;
+        width: 100%;
+        margin-top: -6%;
+        height: 20vh;
+    }
+    .figure-div img{
+        height: 40px;
+        width: 40px;
+        margin-left: 10%;
+        }
+        .figure-div p{
+            font-weight: 600;
+            font-size: 15px;
+            margin-left: 1%;
+        }
+        .figcaption{
+            font-size: 20px;
+            text-align: center;
+            color: #00bfff;
+            margin-top: 30%;
+        }
+    }
+    @media screen and (max-width: 700px) {
+        .service-page-service h3{
+            background: linear-gradient(90deg, #1e90ff, #00bfff, #00ff7f);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            width: 80%;
+            margin-top: 50px; 
+            text-align: center;
+            margin-left: 10%;
+            font-size: 40px;
+        }
+        .service-page-service img{
+            width: 80%;
+            height: 20vh;
+            margin-top: 10px;
+        }
+        .service-page-service-img{
+        
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 5px;
+            margin-top: 20px;
+            margin-left: 15%;
+        }
+        .myfig{
+            background: #fff;
+            width: 80%;
+            margin-top: -6%;
+            height: 20vh;
+        }
+        .figure-div img{
+            height: 40px;
+            width: 40px;
+            margin-left: 10%;
+            }
+            .figure-div p{
+                font-weight: 600;
+                font-size: 15px;
+                margin-left: 1%;
+            }
+            .figcaption{
+                font-size: 20px;
+                text-align: center;
+                color: #00bfff;
+                margin-top: 10%;
+            }
+        }

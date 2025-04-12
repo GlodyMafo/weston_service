@@ -1,0 +1,222 @@
+/* Services.css */
+.services {
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 10%;
+  }
+  
+  .services-title {
+    color: #00bfff;
+    margin-bottom: 20px;
+    font-size: 40px; /* Ajustez la taille de la police si nécessaire */
+  }
+  
+  .accordion {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px 0; /* Ajusté pour descendre */
+  }
+  
+  .accordion-item {
+    border-bottom: 1px solid #ccc;
+    padding: 10px 0; /* Ajouté pour espacer les items */
+  }
+  
+  .accordion-header {
+    padding: 15px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    background-color: #f8f8f8;
+  }
+  
+  .accordion-header:hover {
+    background-color: #e8e8e8;
+  }
+  
+  .accordion-header h3 {
+    margin-left: 10px;
+    font-size: 15px;
+    flex-grow: 1;
+  }
+  
+  .accordion-content {
+    max-height: 20px;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out, padding 0.3s ease-out;
+  }
+  
+  .accordion-content-enter {
+    max-height: 0;
+  }
+  
+  .accordion-content-enter-active {
+    max-height: 500px; /* ajustez selon la taille maximale nécessaire */
+    padding: 10px 15px;
+  }
+  
+  .accordion-content-enter-done {
+    max-height: 500px; /* ajustez selon la taille maximale nécessaire */
+  }
+  
+  .accordion-content-exit {
+    max-height: 500px; 
+    padding: 10px 15px;
+  }
+  
+  .accordion-content-exit-active {
+    max-height: 0;
+    padding: 0 15px;
+  }
+  @media screen and (max-width: 1024px) {
+    .services {
+      text-align: center;
+      padding: 10px 0;
+      margin-top: 10%;
+    }
+    
+    .services-title {
+      color: #00bfff;
+      margin-bottom: 30px;
+      font-size: 40px; /* Ajustez la taille de la police si nécessaire */
+    }
+    
+    .accordion {
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      width: 90%;
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 20px 0; /* Ajusté pour descendre */
+    }
+    
+    .accordion-item {
+      border-bottom: 1px solid #ccc;
+      padding: 10px 0; /* Ajouté pour espacer les items */
+    }
+    
+    .accordion-header {
+      padding: 15px;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      background-color: #f8f8f8;
+    }
+    
+    .accordion-header:hover {
+      background-color: #e8e8e8;
+    }
+    
+    .accordion-header h3 {
+      margin-left: 10px;
+      font-size: 20px;
+      flex-grow: 1;
+    }
+    
+    .accordion-content {
+      max-height: 20px;
+      overflow: hidden;
+      transition: max-height 0.3s ease-out, padding 0.3s ease-out;
+    }
+    
+    .accordion-content-enter {
+      max-height: 0;
+    }
+    
+    .accordion-content-enter-active {
+      max-height: 500px; /* ajustez selon la taille maximale nécessaire */
+      padding: 10px 15px;
+    }
+    
+    .accordion-content-enter-done {
+      max-height: 500px; /* ajustez selon la taille maximale nécessaire */
+    }
+    
+    .accordion-content-exit {
+      max-height: 500px; 
+      padding: 10px 15px;
+    }
+    
+    .accordion-content-exit-active {
+      max-height: 0;
+      padding: 0 15px;
+    }
+    }
+  @media screen and (max-width: 700px) {
+    .services {
+      text-align: center;
+      padding: 10px 0;
+      margin-top: 5%;
+    }
+    
+    .services-title {
+      color: #00bfff;
+      margin-bottom: 20px;
+      font-size: 40px; /* Ajustez la taille de la police si nécessaire */
+    }
+    
+    .accordion {
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      width: 90%;
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 20px 0; /* Ajusté pour descendre */
+    }
+    
+    .accordion-item {
+      border-bottom: 1px solid #ccc;
+      padding: 10px 0; /* Ajouté pour espacer les items */
+    }
+    
+    .accordion-header {
+      padding: 15px;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      background-color: #f8f8f8;
+    }
+    
+    .accordion-header:hover {
+      background-color: #e8e8e8;
+    }
+    
+    .accordion-header h3 {
+      margin-left: 10px;
+      font-size: 10px;
+      flex-grow: 1;
+    }
+    
+    .accordion-content {
+      max-height: 20px;
+      overflow: hidden;
+      transition: max-height 0.3s ease-out, padding 0.3s ease-out;
+    }
+    
+    .accordion-content-enter {
+      max-height: 0;
+    }
+    
+    .accordion-content-enter-active {
+      max-height: 500px; /* ajustez selon la taille maximale nécessaire */
+      padding: 10px 15px;
+    }
+    
+    .accordion-content-enter-done {
+      max-height: 500px; /* ajustez selon la taille maximale nécessaire */
+    }
+    
+    .accordion-content-exit {
+      max-height: 500px; 
+      padding: 10px 15px;
+    }
+    
+    .accordion-content-exit-active {
+      max-height: 0;
+      padding: 0 15px;
+    }
+    }
+  

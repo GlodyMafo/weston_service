@@ -1,0 +1,33 @@
+.about-section h2{
+    background: linear-gradient(90deg, #1e90ff, #00bfff, #00ff7f);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    width: 100%;
+    margin-top: 60px; 
+    text-align: start;
+    margin-left: 10%;
+
+}
+@media screen and (max-width: 1024px) {
+    .about-section h2{
+        background: linear-gradient(90deg, #1e90ff, #00bfff, #00ff7f);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        margin-top: 20px; 
+        text-align: start;
+        margin-left: 10%;
+        font-size: 30px;
+    }
+     }
+@media screen and (max-width: 700px) {
+    .about-section h2{
+        background: linear-gradient(90deg, #1e90ff, #00bfff, #00ff7f);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        width: 100%;
+        margin-top: 20px; 
+        text-align: start;
+        margin-left: 6%;
+        font-size: 30px;
+    }
+     }

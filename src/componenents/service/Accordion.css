@@ -1,0 +1,201 @@
+.accordion {
+    margin: 20px;
+  }
+  
+  .accordion h2 {
+    font-size: 24px;
+    color: #00bfff;
+    text-align: left; /* Aligner le titre à gauche */
+    margin-bottom: 20px;
+  }
+  
+  .accordion-item {
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+    border-radius: 4px;
+  }
+  
+  .accordion-header {
+    background-color: #f7f7f7;
+    padding: 10px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+  }
+  
+  .accordion-header h3 {
+    margin-left: 10px;
+    font-size: 18px;
+    text-align: left; /* Aligner le texte à gauche */
+  }
+  
+  .accordion-content {
+    padding: 10px;
+    border-top: 1px solid #ccc;
+    text-align: left; /* Aligner le contenu à gauche */
+  }
+  
+  .accordion-content ul {
+    list-style-type: disc; /* Ajouter des points devant les éléments */
+    padding-left: 20px; /* Espacement pour les points */
+  }
+  
+  .accordion-content li {
+    font-size: 14px; /* Taille de la police plus petite pour les éléments de la liste */
+    margin-bottom: 5px; /* Espacement entre les éléments de la liste */
+  }
+  
+  .accordion-content-enter {
+    max-height: 0;
+    overflow: hidden;
+  }
+  
+  .accordion-content-enter-active {
+    max-height: 1000px; /* Ajustez cette valeur selon la taille de votre contenu */
+    transition: max-height 300ms ease-in-out;
+  }
+  
+  .accordion-content-exit {
+    max-height: 1000px; /* Ajustez cette valeur selon la taille de votre contenu */
+  }
+  
+  .accordion-content-exit-active {
+    max-height: 0;
+    transition: max-height 300ms ease-in-out;
+  }
+  @media screen and (max-width: 1024px) {
+    .accordion {
+      margin: 20px;
+    }
+    
+    .accordion h2 {
+      font-size: 24px;
+      color: #00bfff;
+      text-align: left; /* Aligner le titre à gauche */
+      margin-bottom: 20px;
+    }
+    
+    .accordion-item {
+      border: 1px solid #ccc;
+      margin-bottom: 10px;
+      border-radius: 4px;
+    }
+    
+    .accordion-header {
+      background-color: #f7f7f7;
+      padding: 10px;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+    }
+    
+    .accordion-header h3 {
+      margin-left: 10px;
+      font-size: 10px;
+      text-align: left; /* Aligner le texte à gauche */
+    }
+    
+    .accordion-content {
+      padding: 10px;
+      border-top: 1px solid #ccc;
+      text-align: left; /* Aligner le contenu à gauche */
+    }
+    
+    .accordion-content ul {
+      list-style-type: disc; /* Ajouter des points devant les éléments */
+      padding-left: 20px; /* Espacement pour les points */
+    }
+    
+    .accordion-content li {
+      font-size: 18px; /* Taille de la police plus petite pour les éléments de la liste */
+      margin-bottom: 5px; /* Espacement entre les éléments de la liste */
+    }
+    
+    .accordion-content-enter {
+      max-height: 0;
+      overflow: hidden;
+    }
+    
+    .accordion-content-enter-active {
+      max-height: 800px; /* Ajustez cette valeur selon la taille de votre contenu */
+      transition: max-height 300ms ease-in-out;
+    }
+    
+    .accordion-content-exit {
+      max-height: 800px; /* Ajustez cette valeur selon la taille de votre contenu */
+    }
+    
+    .accordion-content-exit-active {
+      max-height: 0;
+      transition: max-height 300ms ease-in-out;
+    }
+      }
+  
+  @media screen and (max-width: 700px) {
+    .accordion {
+      margin: 20px;
+    }
+    
+    .accordion h2 {
+      font-size: 24px;
+      color: #00bfff;
+      text-align: left; /* Aligner le titre à gauche */
+      margin-bottom: 20px;
+    }
+    
+    .accordion-item {
+      border: 1px solid #ccc;
+      margin-bottom: 10px;
+      border-radius: 4px;
+    }
+    
+    .accordion-header {
+      background-color: #f7f7f7;
+      padding: 10px;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+    }
+    
+    .accordion-header h3 {
+      margin-left: 10px;
+      font-size: 10px;
+      text-align: left; /* Aligner le texte à gauche */
+    }
+    
+    .accordion-content {
+      padding: 10px;
+      border-top: 1px solid #ccc;
+      text-align: left; /* Aligner le contenu à gauche */
+    }
+    
+    .accordion-content ul {
+      list-style-type: disc; /* Ajouter des points devant les éléments */
+      padding-left: 20px; /* Espacement pour les points */
+    }
+    
+    .accordion-content li {
+      font-size: 10px; /* Taille de la police plus petite pour les éléments de la liste */
+      margin-bottom: 5px; /* Espacement entre les éléments de la liste */
+    }
+    
+    .accordion-content-enter {
+      max-height: 0;
+      overflow: hidden;
+    }
+    
+    .accordion-content-enter-active {
+      max-height: 800px; /* Ajustez cette valeur selon la taille de votre contenu */
+      transition: max-height 300ms ease-in-out;
+    }
+    
+    .accordion-content-exit {
+      max-height: 800px; /* Ajustez cette valeur selon la taille de votre contenu */
+    }
+    
+    .accordion-content-exit-active {
+      max-height: 0;
+      transition: max-height 300ms ease-in-out;
+    }
+      }
+  
