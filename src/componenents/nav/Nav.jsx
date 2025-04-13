@@ -4,81 +4,46 @@ import './Nav.css';
 
 const Nav = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const location = useLocation(); // Utilisez le hook useLocation pour obtenir l'URL actuelle
+  const location = useLocation();
 
-  const toggleMenu = () => {
-    setIsMenuOpen(!isMenuOpen);
-  };
+  const toggleMenu = () => setIsMenuOpen(prev => !prev);
+  const closeMenu = () => setIsMenuOpen(false);
 
-  const closeMenu = () => {
-    setIsMenuOpen(false);
-  };
+  const navLinks = [
+    { to: '/', label: 'Home' },
+    { to: '/about', label: 'About' },
+    { to: '/services', label: 'Product' },
+    { to: '/galery', label: 'Gallery' },
+    { to: '/contact', label: 'Contact' },
+  ];
 
   return (
     <nav className="navbar">
       <div className="navbar-container">
         <Link to="/" className="navbar-logo">
-          <img src={process.env.PUBLIC_URL + '/Images/logobik.jpg'} alt="BIK TRADING SARL" className="logo-img" />
-          <p>BIK-Trading</p>
+          <img src={`${process.env.PUBLIC_URL}/Images/west-logo.png`} alt="Weston Boss Services" className="logo-img" />
         </Link>
 
         <div className="menu-icon" onClick={toggleMenu}>
-          <div className={isMenuOpen ? 'hamburger-menu open' : 'hamburger-menu'}></div>
-          <div className={isMenuOpen ? 'hamburger-menu open' : 'hamburger-menu'}></div>
-          <div className={isMenuOpen ? 'hamburger-menu open' : 'hamburger-menu'}></div>
+          {['', '', ''].map((_, index) => (
+            <div key={index} className={`hamburger-menu ${isMenuOpen ? 'open' : ''}`} />
+          ))}
         </div>
 
-        <ul className={isMenuOpen ? 'nav-menu open' : 'nav-menu'}>
-          <li className="nav-item">
-            <Link 
-              to="/" 
-              className={`nav-links ${location.pathname === '/' ? 'active' : ''}`} 
-              onClick={closeMenu}
-            >
-              Home
-            </Link>
-          </li>
-          <li className="nav-item">
-            <Link 
-              to="/about" 
-              className={`nav-links ${location.pathname === '/about' ? 'active' : ''}`} 
-              onClick={closeMenu}
-            >
-              About
-            </Link>
-          </li>
-          <li className="nav-item">
-            <Link 
-              to="/services" 
-              className={`nav-links ${location.pathname === '/services' ? 'active' : ''}`} 
-              onClick={closeMenu}
-            >
-              Product
-            </Link>
-          </li>
-
-          <li className="nav-item">
-
-            <Link 
-              to="/galery" 
-              className={`nav-links ${location.pathname === '/galery' ? 'active' : ''}`} 
-              onClick={closeMenu}
-            >
-              Galery
-            </Link>
-          </li>
-          <li className="nav-item">
-            <Link 
-              to="/contact" 
-              className={`nav-links ${location.pathname === '/contact' ? 'active' : ''}`} 
-              onClick={closeMenu}
-            >
-              Contact
-            </Link>
-          </li>
+        <ul className={`nav-menu ${isMenuOpen ? 'open' : ''}`}>
+          {navLinks.map(({ to, label }) => (
+            <li key={to} className="nav-item">
+              <Link 
+                to={to}
+                className={`nav-links ${location.pathname === to ? 'active' : ''}`} 
+                onClick={closeMenu}
+              >
+                {label}
+              </Link>
+            </li>
+          ))}
         </ul>
       </div>
-      
     </nav>
   );
 };

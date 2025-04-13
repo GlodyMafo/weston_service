@@ -1,173 +1,131 @@
 import './Home.css';
-import { BiWorld } from "react-icons/bi";
-import { FaHandsHelping } from "react-icons/fa";
-import { GiFamilyHouse } from "react-icons/gi";
 import { AiOutlineArrowRight, AiOutlineDownload } from "react-icons/ai";
 import { Link, useNavigate } from 'react-router-dom';
+
+import {
+    FaTools,
+    FaCogs,
+    FaCompress,
+    FaThermometerHalf,
+    FaVial,
+    FaDesktop,
+    FaHardHat,
+    FaStream,
+    FaAppleAlt,
+    FaBroom
+} from "react-icons/fa";
+import Counters from '../UX/Counters';
+
+
 const PDF = process.env.PUBLIC_URL + '/Images/COMPANY PROFILE BIK T.pdf';
 
+const services = [
+    { icon: <FaTools />, label: "Electrical instrumentation" },
+    { icon: <FaCogs />, label: "Mechanical motors & gearboxes" },
+    { icon: <FaCompress />, label: "Mechanical seals & critical spare parts" },
+    { icon: <FaThermometerHalf />, label: "Valves, pressure & temperature transmitters" },
+    // { icon: <FaVial />, label: "Laboratory reagents" },
+    { icon: <FaDesktop />, label: "IT Products & computers" },
+    { icon: <FaHardHat />, label: "Personal protective equipment (PPE)" },
+    { icon: <FaStream />, label: "Conveyor belt accessories" },
+    { icon: <FaAppleAlt />, label: "Industrial-grade food supplies" },
+    { icon: <FaBroom />, label: "Cleaning & maintenance services" },
+];
+
+
 function Home() {
-    const contactItems = [
-        {
-            icon: <FaHandsHelping className='icon' />,
-            title: "Support",
-            description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
-        },
-        {
-            icon: <BiWorld className='icon' />,
-            title: "Global",
-            description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
-        },
-        {
-            icon: <GiFamilyHouse className='icon' />,
-            title: "Family",
-            description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
-        },
-        {
-            icon: <FaHandsHelping className='icon' />,
-            title: "Support",
-            description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
-        },
-        {
-            icon: <BiWorld className='icon' />,
-            title: "Global",
-            description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
-        },
-        {
-            icon: <GiFamilyHouse className='icon' />,
-            title: "Family",
-            description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
-        }
-    ];
 
     return (
-        <section>
+        <div>
 
-            <div className='home'>
-                <div className='home-page'>
-                    <img src={process.env.PUBLIC_URL + '/Images/homebg.jpg'} alt="" />
+            <section className='hero'>
 
-                    {/*  <div className="home-page__text">
-                        <h2 className="gradient-text">Your partner for responsible mining</h2>
-                        <p>Trust BIK TRADING SERVICE SARL !</p>
-                        <Link to="/About">
-                            <button>Discover us</button>
-
-                        </Link>
-                    </div> */}
-                </div>
-                {/*   <div className='about-home-page'>
-                    <div className='about-home-page__item'>
-                        <div className='about-home-page__mission'>
-                            <FaHandsHelping className='icon' />
-                            <h2>Mission</h2>
-                            <p>Trougth innovation and dedication to our customers, we make sure in everything we do that our everyday service distinguishes us from our competitors</p>
-                        </div>
-                    </div>
-                    <div className='about-home-page__item'>
-                        <div className='about-home-page__vison'>
-                            <BiWorld className='icon' />
-                            <h2>Vision</h2>
-                            <p>We strive to be the most trusted supplier in Drc of quality industrial, safety,surveillance products and services</p>
-                        </div>
-                    </div>
-                    <div className='about-home-page__item'>
-                        <div className='about-home-page__value'>
-                            <GiFamilyHouse className='icon' />
-                            <h2>Values</h2>
-                            <p>Our performance-oriented culture and responsible approach from the foundations of our business depends on our creativity,dedication and performance</p>
-                        </div>
-                    </div>
-                </div> */}
-
-                <div className="service-home-page">
-                    <h1>BIK TRADING SERVICE</h1>
-                    <p>BIK TRADING SERVICE was Incorporated as a congolese company in the year 2021CD/LSH/RCCM/22-B-01930, Tax registration number A22065951, I.D, NAT 05-F4200-N05832T as a Clvil Construction company and supplier of various industrial products i.e.
-                    </p>
-                    <p> BIK TRADING SERVICE adds value and piece of mind to operations in the mining, exploration and civil engineering industries that rely on moving equipment and related supplies to all parts of Africa. Having an excellent relationship with local and international suppliers, Total Mining will deliver the correct equipment and supplies safely, and within the correct time frame to site, allowing our customers piece of mind and to concentrate on their core business.</p>
+                <div className="hero-content">
+                    <h1>WESTON BOSS SERVICE .</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni placeat eum unde l Lorem ipsum dolor sit amet consectetur adipisicing elit. Error, ex incidunt fugit quos quas cupiditate! abore nesciunt sequi quidem vel eligendi, veniam sint libero commodi eveniet! Sit nam asperiores deleniti possimus. Neque, laboriosam.</p>
 
                     <Link to="/Services">
-                        <button className='btn'>Learn more</button>
-
-
+                        <button className='btn'>Let's Start</button>
                     </Link>
                 </div>
-                {/*  <div className="founder-home-page">
-                    <div className="founder-home-page__img">
-                        <img src={process.env.PUBLIC_URL + '/Images/image3.jpeg'} alt="" />
-                    </div>
-                    <div className="founder-home-page__text">
-                        <h1 style={{ marginTop: '20px' }}> "</h1>
-                        <p>Mining is an industry for today, tomorrow and forever. At BIK TRADING SERVICE SARL, we are committed to providing innovative and sustainable mining solutions, tailored to your specific needs. Together, we are shaping the future of our industry.           </p>
-                        <div className="bar"></div>
-                        <div className="founder-profile">
-                            <img src={process.env.PUBLIC_URL + ''} />
-                            <div className="profile-info">
-                                <h2>Brialy Kasongo</h2>
-                                <p>Founder</p>
-                            </div>
-                        </div>
+
+                <img src={process.env.PUBLIC_URL + '/Images/homebg.jpg'} alt="" />
+
+            </section>
+
+
+            <section className="who-we-are">
+                <div className="images-section">
+                    <div className="image-grid">
+                        <img src="Images/abts1.jpg" alt="Professional woman" className="img1" />
+                        <img src="Images/abts3.jpg" alt="Teamwork" className="img2" />
+                        <img src="Images/abts2.jpg" alt="Businesswoman" className="img3" />
+                        <img src="Images/abts4.jpg" alt="Discussion" className="img4" />
                     </div>
                 </div>
-                <div className="home-page-presentation">
-                    <div className='home-page-presentation-flex'>
-                        <h2>Get ready for the future</h2>
-                        <p>Grow your career, transform our industry and improve lives</p>
-                        <Link to="/Contact">
-                            <button className='home-page-presentation-flex-btn'>
-                                <span>Contact us</span>
-                                <AiOutlineArrowRight className='icone' />
-                            </button>
 
-                        </Link>
+                <div className="text-section">
+                    <h2 className='titre2'>About Weston Boss</h2>
+                    <p className="description">
+                        ITM SARL is a leading provider of Human Resource solutions, offering tailored
+                        services across 18 countries in Africa. We specialize in recruitment, payroll
+                        management, performance optimization, and employee training, helping businesses
+                        enhance their workforce and operational efficiency.
+                        <br /><br />
+                        As part of ITM Holding, we leverage the resources and expertise of a pan-African
+                        conglomerate to deliver compliant and effective solutions that support long-term
+                        business success. With a strong focus on operational excellence and employee
+                        development, ITM SARL is your trusted partner for sustainable growth.
+                    </p>
+                    <button >Discover more</button>
+                </div>
+            </section>
 
-                    </div>
-                    <div className="home-page-presentation-grid">
-                        <div className='home-page-presentation-grid1'>
-                            <p>Green hydrogen: latest studies highlight potential of “energy of the future</p>
+
+
+            <section className="services-container">
+                <div className="services-header">
+                    <h2 className='titre2'>Our Solutions</h2>
+                    <p className="company-desc">
+                        As a civil establishment, we provide high-performance industrial solutions for the mining and heavy industry sectors.
+                    </p>
+                </div>
+
+                <div className="services-grid">
+                    {services.map((service, index) => (
+                        <div className="service-card" key={index}>
+                            <span className="service-icon">{service.icon}</span>
+                            <span className="service-label">{service.label}</span>
                         </div>
-                        <div className='home-page-presentation-grid2'>
-                            <p>Explore opportunities</p>
-                        </div>
-                        <div className='home-page-presentation-grid3'>
-                            <h2>Welcome Everyone</h2>
-                            <Link to="/About">
+                    ))}
+                </div>
 
-                                <button className='home-page-presentation-grid3-btn'>Learn More</button>
+                <div className="slogan-section">
+                    <span className="slogan-label">Our Slogan</span>
+                    <h3 className="slogan">“Name it and we will supply.”</h3>
+                </div>
+            </section>
 
-                            </Link>
-                        </div>
-                        <div className='home-page-presentation-grid4'>
-                            <Link to="/Contact">
-                                <button className='home-page-presentation-grid4-btn'>
-                                    Contact us
-                                    <AiOutlineArrowRight className='icone' />
 
-                                </button>
+            <Counters />
 
-                            </Link>
 
-                        </div >
-                        <div className='home-page-presentation-grid5'>
-                            <h2>90% of employees would recommend to a friend</h2>
-                        </div>
 
-                    </div>
-                </div> */}
-                <div className="home-page-pdf">
-                    <div className="home-page-pdf-div">
-                        <h2>Download our profile </h2>
-                        <a href={PDF} download className='pdf'>
-                            Download pdf
-                            <AiOutlineDownload className='download-icon' />
-                        </a>
 
-                    </div>
+
+            <div className="home-page-pdf">
+                <div className="home-page-pdf-div">
+                    <h2>Download our profile </h2>
+                    <a href={PDF} download className='pdf'>
+                        Download pdf
+                        <AiOutlineDownload className='download-icon' />
+                    </a>
 
                 </div>
+
             </div>
 
-        </section>
+        </div>
     )
 }
 

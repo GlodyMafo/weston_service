@@ -1,0 +1,70 @@
+.counters-section {
+    background-image: url("./abts4.jpg"); 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 80px 5%;
+    color: white;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+  }
+  
+  .counters-section::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 51, 102, 0.85); /* voile bleu foncé */
+    z-index: -1;
+  }
+  
+  .counters-content {
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+  
+  .counters-title {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #00c2d3;
+  }
+  
+  .counters-description {
+    font-size: 18px;
+    margin-bottom: 50px;
+    color: #f0f0f0;
+  }
+  
+  .counters-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+  }
+  
+  .counter-card {
+    background: #004080;
+    border-radius: 12px;
+    padding: 30px;
+    min-width: 200px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  .counter-card:hover {
+    transform: translateY(-8px);
+  }
+  
+  .counter-number {
+    font-size: 48px;
+    font-weight: bold;
+    color: #00c2d3;
+  }
+  
+  .counter-label {
+    margin-top: 12px;
+    font-size: 16px;
+    font-weight: 500;
+  }
+  
