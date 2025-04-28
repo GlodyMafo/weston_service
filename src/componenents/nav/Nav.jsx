@@ -13,7 +13,7 @@ const Nav = () => {
     { to: '/', label: 'Home' },
     { to: '/about', label: 'About' },
     { to: '/services', label: 'Product' },
-    { to: '/galery', label: 'Gallery' },
+    // { to: '/galery', label: 'Gallery' },
     { to: '/contact', label: 'Contact' },
   ];
 

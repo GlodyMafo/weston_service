@@ -13,7 +13,7 @@
   margin-bottom: 30px;
 }
 
-img {
+.footer-logo {
   filter: brightness(0) invert(1); 
   width: 60%;
   height: auto;
@@ -51,11 +51,12 @@ img {
 }
 
 .footer-links h4{
-  padding-left: 32px;
+  padding-left: 50px;
 }
 .footer-links ul {
   list-style: none;
   padding: 0;
+  padding-left: 50px;
 }
 
 .footer-links li {

@@ -1,7 +1,6 @@
 
 .navbar {
   background-color: #fff;
-  /* padding: 10px; */
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -16,6 +15,7 @@
   color: #030521;
   font-weight: 600;
   background: #f0f0f0;;
+  border-radius: 20px;
 }
 
 .navbar-container {
@@ -86,7 +86,6 @@ border-right:1px solid #030521;
 
 .nav-item {
   text-align: center;
-  /* margin: 10px 0; */
 }
 
 .nav-links {
@@ -99,6 +98,7 @@ border-right:1px solid #030521;
 
 .nav-links:hover {
   background-color: #f0f0f0;
+  border-radius: 20px;
 }
 
  @media screen and (max-width: 1024px) {
@@ -144,6 +144,11 @@ border-right:1px solid #030521;
     .nav-links:hover {
       background-color: #f0f0f0;
     }
+
+    .navbar-logo {
+    border-right:none;
+     
+    }
   }
 
 @media screen and (max-width: 700px) {
@@ -172,12 +177,6 @@ border-right:1px solid #030521;
     height: 40px;
   }
 
-  .menu-icon {
-    display: block;
-    margin-left: 120px;
-    margin-top: 2%;
-  }
-
   .nav-menu {
     display: none;
     position: absolute;
@@ -200,4 +199,28 @@ border-right:1px solid #030521;
   .nav-links:hover {
     background-color: #f0f0f0;
   }
+
+  .menu-icon {
+    display: block;
+    margin: 0;
+    padding: 0 1rem;
+    position: absolute;
+    right: 10px;
+    top: 20px;
+    z-index: 100;
+  }
+
+  .navbar-container {
+    position: relative;
+  }
+
+  .hamburger-menu {
+    background-color: #1f1f38; 
+  }
+
+  .navbar-logo {
+    border-right:none;
+    padding-inline: 1rem;
+     
+    }
 }

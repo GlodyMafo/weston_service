@@ -2,10 +2,10 @@ import React, { useEffect, useState } from "react";
 import "./Counters.css";
 
 const countersData = [
-  { label: "Years of Experience", value: 10 },
+  { label: "Months of Experience", value: 6 },
   { label: "Projects Delivered", value: 250 },
-  { label: "Satisfied Clients", value: 120 },
-  { label: "Partners Worldwide", value: 35 },
+  { label: "Satisfied Clients", value: 53 },
+  { label: "Partners Worldwide", value: 15 },
 ];
 
 const Counter = ({ value, label }) => {

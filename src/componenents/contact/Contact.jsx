@@ -30,7 +30,7 @@ const Contact = () => {
     const formData = new FormData(form);
 
     try {
-      const response = await fetch('https://formspree.io/f/mkgwwzzk', {
+      const response = await fetch('https://formspree.io/f/xldbdbky', {
         method: 'POST',
         body: formData,
         headers: {
@@ -56,25 +56,27 @@ const Contact = () => {
   return (
     <section className='contact'>
 
-      <h2>Let's talk with us!</h2>
+    {/* <div className='contact2'></div> */}
+
+      <h2>Let's talk !</h2>
       <div className="container contact-container">
         <div className="contact-options">
           <article className="contact-option">
             <MdOutlineEmail className='contact-option__icon' />
             <h4>Email</h4>
-            <h5>biktradingservice@gmail.com</h5>
-            <a href="mailto:biktradingservice@gmail.com">Envoyez-moi un message</a>
+            <h5>westonbossservice@gmail.com</h5>
+            <a href="mailto:westonbossservice@gmail.com">send an email</a>
           </article>
           <article className="contact-option">
             <FaWhatsapp className='contact-option__icon' />
             <h4>WhatsApp</h4>
-            <h5>+243 824 663 434</h5>
+            <h5>+243 85 390 4905</h5>
           </article>
           <article className="contact-option">
             <FaLinkedin className='contact-option__icon' />
             <h4>Linkedin</h4>
-            <h5>BIK TRADING SERVICE</h5>
-            <a href="">Envoyez-moi un message</a>
+            <h5>WESTON BOSS BUSINESS</h5>
+            <a href=" https://cd.linkedin.com/in/westonboss-service-345031362 " target='_blank'>view our profil</a>
           </article>
         </div>
 

@@ -8,25 +8,33 @@
     color: var(--white-color);
     padding-block: 25px;
     margin-top: 5%;
+    background: url('./contact.jpg') no-repeat center center/cover;
+    position: relative;
   }
+
   
   .container.contact-container {
     width: 58%;
     display: grid;
     grid-template-columns: 30% 58%;
     gap: 12%;
-    margin-top: 5%;
+  }
+
+  .contact h2{
+    color: #fff;
+    font-size: 48px;
+    font-weight: bold;
   }
   
   .container.contact-container h5,
   .container.contact-container h4 {
     font-size: 12px;
-    color: var(--white-color);
+    color: #003366;
     font-weight: 600;
   }
   
   .contact-option__icon {
-    color: var(--white-color);
+    color: #003366;
   }
   
   .contact-options {
@@ -44,6 +52,7 @@
     border-radius: 0.4rem;
     cursor: pointer;
     transition: var(--transition);
+    margin-top: 0px;
   }
   
   .btn-primary {
@@ -58,19 +67,19 @@
   }
   
   .btn-primary:hover {
-    background: transparent;
-    color: var(--main-color);
+    background: #003366;
+    color: white;
     border-color: var(--main-color);
   }
   
   .contact-option {
-    background-color: rgba(77, 181, 255, 0.857);
+    background: white;
     padding: 1.2rem;
     border-radius: 1.2rem;
     text-align: center;
     border: 1px solid transparent;
     transition: var(--transition);
-    color: #fff;
+    color: #003366;
   }
   
   
@@ -90,6 +99,10 @@
     color: var(--main-color);
    
   }
+
+  .contact-option a:hover{
+    color: #003366;
+  }
   .contact-option h4{
     color: #fff;
   }
@@ -105,10 +118,14 @@
     width: 100%;
     padding: 1.5rem;
     border-radius: 0.5rem;
-    background-color: transparent;
+    background-color: white;
     border: 2px solid rgba(77, 181, 255, 0.4);
     resize: none;
     color: #000;
+  }
+
+  textarea{
+    height: 220px;
   }
   
   h1, h2, h4, h5 {
@@ -135,10 +152,17 @@
       grid-template-columns: 1fr;
       gap: 2rem;
     }
+    .contact{
+      margin-top: 0px;
+    }
   }
   
   @media screen and (max-width: 600px) {
     .container.contact-container {
       width: var(--container-width-sm);
+    }
+
+    .contact{
+      margin-top: 0px;
     }
   }

@@ -2,49 +2,28 @@ import './Home.css';
 import { AiOutlineArrowRight, AiOutlineDownload } from "react-icons/ai";
 import { Link, useNavigate } from 'react-router-dom';
 
-import {
-    FaTools,
-    FaCogs,
-    FaCompress,
-    FaThermometerHalf,
-    FaVial,
-    FaDesktop,
-    FaHardHat,
-    FaStream,
-    FaAppleAlt,
-    FaBroom
-} from "react-icons/fa";
+
 import Counters from '../UX/Counters';
+import Services from '../UX/Services';
 
 
-const PDF = process.env.PUBLIC_URL + '/Images/COMPANY PROFILE BIK T.pdf';
-
-const services = [
-    { icon: <FaTools />, label: "Electrical instrumentation" },
-    { icon: <FaCogs />, label: "Mechanical motors & gearboxes" },
-    { icon: <FaCompress />, label: "Mechanical seals & critical spare parts" },
-    { icon: <FaThermometerHalf />, label: "Valves, pressure & temperature transmitters" },
-    // { icon: <FaVial />, label: "Laboratory reagents" },
-    { icon: <FaDesktop />, label: "IT Products & computers" },
-    { icon: <FaHardHat />, label: "Personal protective equipment (PPE)" },
-    { icon: <FaStream />, label: "Conveyor belt accessories" },
-    { icon: <FaAppleAlt />, label: "Industrial-grade food supplies" },
-    { icon: <FaBroom />, label: "Cleaning & maintenance services" },
-];
+const PDF = process.env.PUBLIC_URL + './profil-weston-boss.pdf';
 
 
 function Home() {
 
     return (
-        <div>
+        <div className='home'>
 
-            <section className='hero'>
+            <section className='hero small'>
 
                 <div className="hero-content">
-                    <h1>WESTON BOSS SERVICE .</h1>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni placeat eum unde l Lorem ipsum dolor sit amet consectetur adipisicing elit. Error, ex incidunt fugit quos quas cupiditate! abore nesciunt sequi quidem vel eligendi, veniam sint libero commodi eveniet! Sit nam asperiores deleniti possimus. Neque, laboriosam.</p>
-
-                    <Link to="/Services">
+                    <h1>WESTON BOSS SERVICE </h1>
+                    <p>EST WESTON BOSS SERVICE is a Congolese company established in 2025, registered under number    CD/KNM/RCCM/25-A-05574 with tax identification number A2537691W
+                        ID,NAT 01-S9502-N63324H.
+                        <br />
+                         Operating as a civil establishment, we specialize in the supply of high-performance industrial solutions tailored to the mining and heavy industry sectors</p>
+                    <Link to="/Contact">
                         <button className='btn'>Let's Start</button>
                     </Link>
                 </div>
@@ -67,17 +46,14 @@ function Home() {
                 <div className="text-section">
                     <h2 className='titre2'>About Weston Boss</h2>
                     <p className="description">
-                        ITM SARL is a leading provider of Human Resource solutions, offering tailored
-                        services across 18 countries in Africa. We specialize in recruitment, payroll
-                        management, performance optimization, and employee training, helping businesses
-                        enhance their workforce and operational efficiency.
-                        <br /><br />
-                        As part of ITM Holding, we leverage the resources and expertise of a pan-African
-                        conglomerate to deliver compliant and effective solutions that support long-term
-                        business success. With a strong focus on operational excellence and employee
-                        development, ITM SARL is your trusted partner for sustainable growth.
+                    At EST WESTON BOSS SERVICE, we are driven by a commitment to quality, reliability, and speed. <br /> <br /> We partner with our clients to ensure they receive top-tier products and services—delivered efficiently and professionally.
+                    <br /><br />
+                    <strong>Whatever you name, we will supply !</strong>
+                    
                     </p>
+                    <Link to="/Services">
                     <button >Discover more</button>
+                    </Link>
                 </div>
             </section>
 
@@ -87,31 +63,19 @@ function Home() {
                 <div className="services-header">
                     <h2 className='titre2'>Our Solutions</h2>
                     <p className="company-desc">
-                        As a civil establishment, we provide high-performance industrial solutions for the mining and heavy industry sectors.
+                        As a civil establishment, we provide high-performance industrial solutions for our clients and they are satisfaction.
                     </p>
                 </div>
 
-                <div className="services-grid">
-                    {services.map((service, index) => (
-                        <div className="service-card" key={index}>
-                            <span className="service-icon">{service.icon}</span>
-                            <span className="service-label">{service.label}</span>
-                        </div>
-                    ))}
-                </div>
+                <Services />
 
                 <div className="slogan-section">
                     <span className="slogan-label">Our Slogan</span>
-                    <h3 className="slogan">“Name it and we will supply.”</h3>
+                    <h3 className="slogan">“Empowering Industry. Delivering Excellence.”</h3>
                 </div>
             </section>
 
-
             <Counters />
-
-
-
-
 
             <div className="home-page-pdf">
                 <div className="home-page-pdf-div">
