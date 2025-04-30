@@ -1,13 +1,15 @@
 import React from "react";
 import "./Footer.css";
+import { Link, useNavigate } from 'react-router-dom';
+
 
 const Footer = () => {
   return (
     <footer className="footer">
       <div className="footer-container">
         <div className="footer-about">
-        <img src={`${process.env.PUBLIC_URL}/Images/west-logo.png`} alt="Weston Boss Services" className="footer-logo"  />
-        <p>RCCM: CD/KNM/RCCM/25-A-05574</p>
+          <img src={`${process.env.PUBLIC_URL}/Images/west-logo.png`} alt="Weston Boss Services" className="footer-logo" />
+          <p>RCCM: CD/KNM/RCCM/25-A-05574</p>
           <p>ID NAT: 01-S9502-N63324H</p>
           <p>Tax ID: A2537691W</p>
         </div>
@@ -15,15 +17,21 @@ const Footer = () => {
         <div className="footer-links">
           <h4>Quick Links</h4>
           <ul>
-            <li><a href="#services">Services</a></li>
-            <li><a href="#about">Who We Are</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <Link to="/Services">
+              <li><a href="#services">Services</a></li>
+            </Link>
+            <Link to="/About">
+              <li><a href="#about">Who We Are</a></li>
+            </Link>
+            <Link to="/Contact">
+              <li><a href="#contact">Contact</a></li>
+            </Link>
           </ul>
         </div>
 
         <div className="footer-contact">
           <h4>Contact</h4>
-         
+
           <p>Email: westonbossservice@gmail.com</p>
           <p>Phone: +243 85 390 4905</p>
         </div>

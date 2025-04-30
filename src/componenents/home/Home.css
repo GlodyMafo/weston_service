@@ -1,19 +1,22 @@
 .hero{
     display: flex;
     align-content: center;
+    height: 100vh;
 }
 
 .hero-content{
-padding-top: 120px;
+padding-top: 160px;
  padding-inline: 40px;
  padding-left: 80px;
+
 }
 
-.hero-content h1{
-    font-size: 50px;
-    font-weight: 600;
-    color: #030521;
+.hero-content h1 {
+  font-size: clamp(2rem, 5vw, 4rem);
+  font-weight: 600;
+  color: #030521;
 }
+
 
 .titre2 {
     color:#030521 ;
@@ -37,7 +40,7 @@ padding-top: 120px;
 
 button {
     border-radius: 50px ;
-    margin-top: 30px;
+    margin-top: 10px;
     cursor: pointer;
     padding: 0.75rem 1.2rem;
     font-size: 18px;
@@ -210,12 +213,9 @@ button:hover {
     -webkit-text-fill-color: transparent;
     width: 100%;
     text-align: center;
-    margin-top: 60px; 
+   padding-top: 40px;
 }
-.home-page-pdf-img img{
-    width: 100px;
-    height: 100px;
-}
+
 
 .pdf {
     color: #00bfff;
@@ -232,6 +232,11 @@ button:hover {
     color: #1e90ff;
 }
 
+.download-icon{
+  font-size: 3em;
+  font-weight: bold;
+  padding-bottom: 8px;
+}
 
 
 @media screen and (max-width: 1024px) {
@@ -248,32 +253,34 @@ button:hover {
 
   .small{
     background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('./homebg.jpg') no-repeat center center/cover;
-    height: 100vh;
+    height: 80vh;
     background-blend-mode: darken;
+    align-items: center;
+    align-content: center ;
   }
 
   .small h1{
-color: #efeafe;
+color: white;
   }
 
   .small p{
     color: white;
-    font-weight: bold;
+  
+    padding-inline: 0px ;
   }
 
-  .hero img {
-      max-width: 80%;
-      height: auto;
-      margin-top: 20px;
-      clip-path: none; 
+  .small img {
+    display: none;
   }
+
 
   /* Who-we-are section */
   .who-we-are {
-      padding: 30px;
+      padding-inline: 28px;
       flex-direction: column;
       align-items: center;
       gap: 30px;
+      height: auto;
   }
 
   /* Image grid adjustments */
@@ -295,6 +302,18 @@ color: #efeafe;
   /* Text section */
   .text-section {
       max-width: 90%;
+      margin-top: 0px;
+      padding-top: 0px;
+  }
+
+  .titre2{
+    padding-top: 0px;
+    margin-top: 0px;
+  }
+
+  .description{
+    margin-top: 0px;
+    padding-top: 0px;
   }
 
   /* Services container */
@@ -325,10 +344,6 @@ color: #efeafe;
       margin-top: -30px;
   }
 
-  /* Who-we-are buttons */
-  .who-we-are button {
-      width: 100%;
-  }
 }
 
 @media screen and (max-width: 700px) {
@@ -361,7 +376,7 @@ color: #efeafe;
   /* Button adjustments for small screens */
   button {
     border-radius: 50px ;
-    margin-top: 30px;
+    /* margin-top: 30px; */
     cursor: pointer;
     padding: 0.75rem 1.2rem;
     font-size: 18px;

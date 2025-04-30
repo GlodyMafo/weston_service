@@ -45,7 +45,7 @@ const Counters = () => {
         <h2 className="counters-title">Our Achievements</h2>
         <p className="counters-description">
           At EST WESTON BOSS SERVICE, our dedication to excellence has led to remarkable results.
-          Here's a glimpse of what we’ve accomplished over the years.
+          Here's a glimpse of what we’ve accomplished over the months.
         </p>
       </div>
       <div className="counters-wrapper">

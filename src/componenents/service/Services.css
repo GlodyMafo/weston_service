@@ -77,4 +77,53 @@
     font-size: 1.1rem;
     color: #333;
   }
+
+  @media screen and (min-width: 768px) and (max-width: 1023px) {
+    .services-title {
+      font-size: 28px;
+    }
+  
+    .button-group {
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+  
+    .button-group button {
+      font-size: 17px;
+      padding: 0.6rem 1.1rem;
+      color: white;
+    }
+  
+    .product-list {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  @media screen and (max-width: 767px) {
+    .services-title {
+      font-size: 24px;
+    }
+  
+    .button-group {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 10px;
+    }
+  
+    .button-group button {
+      font-size: 16px;
+      padding: 0.5rem 1rem;
+      color: white;
+    }
+  
+    .product-list {
+      grid-template-columns: 1fr;
+    }
+  
+    .product-card h3 {
+      font-size: 1rem;
+    }
+  }
+  
   

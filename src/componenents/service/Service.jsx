@@ -1,11 +1,7 @@
-// Services.js
-import React, { useState } from 'react';
-// import "./ProductList.css";
-import './Services.css'; // Ajoutez des styles spécifiques pour ce composant si nécessaire
 
-// import React,  from "react";
-// import "./ProductList.css";
-// import './product.css'
+import React, { useState } from 'react';
+import './Services.css'; 
+
 
 const productsData = [
   {
